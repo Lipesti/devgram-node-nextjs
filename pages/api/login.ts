@@ -16,7 +16,7 @@ const endpointLogin = (
         return res.status(400).json({erro : 'Usuário ou senha não encontrado'});
 
     }
-    return res.status(405).json({erro : 'Metodo informado não é valido'});
+    return res.status(405).json({erro : 'Metodo informado não existe'});
 }
 
 export default conectarMongoDb(endpointLogin);
